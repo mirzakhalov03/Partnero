@@ -1,0 +1,31 @@
+@import "./variables/variables";
+@import "./blocks/nav";
+@import "./blocks/header";
+@import "./blocks/about";
+@import "./blocks/feedback";
+@import "./blocks/mission";
+@import "./blocks/pricing";
+@import "./blocks/contact";
+@import "./blocks/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+

@@ -1,0 +1,25 @@
+.contact{
+    margin-top: 100px;
+    padding-top: 50px;
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+        background-color: #FFE3FB;
+        border-radius: 140px 0 140px 0;
+        padding: 60px;
+        text-align: center;
+
+        h2{
+            font-size: 37px;
+            line-height: 48px;
+            letter-spacing: 2.5px;
+            color: #021412;
+        }
+
+        button{
+            @include btnStyle(15px, 37px,'glow')
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.feedback{
+    margin-top: 80px;
+    padding-top: 100px;
+
+    &__wrapper{
+        max-width: 90%;
+        margin: 0 auto;
+
+        @extend %display;
+
+    }
+
+    &__img{
+        max-width: 30%;
+        width: 100%;
+
+        
+    }
+
+    &__content{
+        max-width: 70%;
+        width: 100%;
+        position: relative;
+
+        img{
+            position: absolute;
+            top: -20%;
+            left: 0;
+            z-index: -2;
+        }
+        blockquote{
+            font-size: 30px;
+            line-height: 45px;
+            color: #021412;
+            max-width: 771px;
+        }
+
+        a{
+            color: #021412;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        cite{
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 36px;
+            color: #021412;
+        }
+
+        small{
+            font-size: 17px;
+            color: #71717A;
+            
+        }
+    }
+}

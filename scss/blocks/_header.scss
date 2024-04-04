@@ -1,0 +1,164 @@
+.hero{
+    max-width: 100%;
+
+    &__wrapper{
+        @extend %display;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+
+
+    }
+
+    &__content{
+        max-width: 45%;
+        width: 100%;
+        padding-top: 100px;
+
+        h1{
+            max-width: 524px;
+            font-size: 64px;
+            line-height: 65px;
+            letter-spacing: 3px;
+
+        }
+
+        p{
+            max-width: 444px;
+            font-size: 20px;
+            color: #082925;
+            line-height: 30px;
+            padding: 30px 0 45px 0;
+        }
+
+        button{
+            @include btnStyle(3px, 33px, 'glow');
+        }
+
+        .shaped__divs{
+            margin-top: 30px;
+           
+            display: flex;
+            gap: 40px;
+            position: relative;
+
+            
+            .gray-one{
+                position: absolute;
+                left: 0;
+                max-width: 155px;
+                width: 100%;
+                height: 240px;
+                background-color: #F1F5F9;
+                border-radius: 0px 9999px 9999px 0px;
+                
+
+                animation: glow 3s linear infinite alternate;
+
+                @keyframes glow {
+                    from {
+                      box-shadow: 0 0 6px -6px #aef4af;
+                    }
+                    to {
+                      box-shadow: 0 0 6px 6px #aef4af;
+                    }
+                  }
+            }
+
+            .pink-one{
+                margin-left: 140px;
+                max-width: 160px;
+                width: 100%;
+                height: 100px;
+                background-color: #FFE3FB;
+                border-radius: 9999px 9999px 0px 0px;
+
+                animation: glow-c 3s linear infinite alternate;
+
+                @keyframes glow-c {
+                    from {
+                      box-shadow: 0 0 6px -6px crimson;
+                    }
+                    to {
+                      box-shadow: 0 0 6px 6px crimson;
+                    }
+                    
+                  }
+            }
+
+            .green-one{
+                max-width: 150px;
+                width: 100%;
+                height: 100px;
+                border-radius: 0px 9999px 9999px 9999px;
+                background-color: #15837B;
+
+                animation: glow-l 3s linear infinite alternate;
+
+                @keyframes glow-l {
+                    from {
+                      box-shadow: 0 0 6px -6px lime;
+                    }
+                    to {
+                      box-shadow: 0 0 6px 6px lime;
+                    }
+                  }
+            }
+        }
+
+        
+    }
+
+    
+
+    &__imgs{
+        max-width: 500px;
+        width: 100%;
+        padding: 350px 0;
+        margin-top: 60px;
+        border-radius: 400px 0 0 0;
+
+        background-color: #e5e5f7;
+        opacity: 0.8;
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 17px ), repeating-linear-gradient( #7DF1E8, #444cf7 );
+
+        animation: glow-d 3s linear infinite alternate;
+
+                @keyframes glow-d {
+                    from {
+                      box-shadow: 0 0 10px -10px dodgerblue;
+                    }
+                    to {
+                      box-shadow: 0 0 10px 10px dodgerblue;
+                    }
+                  }
+
+        
+        
+    }
+
+    .yellow-shape{
+        margin-top: 30px;
+        max-width: 900px;
+        
+    
+        width: 100%;
+        height: 100px;
+        background-color: #FFDD58;
+        border-radius: 0 0 0 9999px;
+
+
+        animation: glow-y 3s linear infinite alternate;
+
+        @keyframes glow-y {
+            from {
+              box-shadow: 0 0 10px -6px #1b1b1a78;
+            }
+            to {
+              box-shadow: 0 0 10px 6px #1b1b1a76;
+            }
+          }
+    }
+
+    
+}

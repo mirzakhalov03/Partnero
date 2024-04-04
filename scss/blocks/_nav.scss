@@ -1,0 +1,43 @@
+.nav{
+    max-width: 100%;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.368);
+    backdrop-filter: blur(5px);
+
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+        padding-top: 20px;
+
+        @extend %display;
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            a{
+                color: #021412;
+            }
+        }
+
+        
+    }
+
+    &__links-btns{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    button{
+        @include btnStyle(13px, 40px, 'glow');
+        font-size: 14px;
+    }
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}

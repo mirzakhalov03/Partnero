@@ -1,0 +1,78 @@
+.about{
+    padding-top: 80px;
+    margin-top: 80px;
+
+    &__wrapper{
+        max-width: 80%;
+        width: 100%;
+        margin: 0 auto;
+
+        @extend %display;
+
+
+
+    }
+
+    &__card{
+       @include boxStyle(0, 120px);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+
+    
+        animation: glow 1s infinite alternate;
+
+        @keyframes glow {
+            from {
+              box-shadow: 0 0 6px -6px #aef4af;
+            }
+            to {
+              box-shadow: 0 0 6px 6px #aef4af;
+            }
+          }
+    
+
+       span{
+        font-size: 23px;
+        line-height: 45px;
+        display: block;
+        letter-spacing: 2px;
+        color: #021412;
+       }
+
+       p{
+        font-size: 19px;
+        color: #021412;
+        line-height: 30px;
+       }
+
+       button{
+            @include btnStyle(15px, 37px, 'glow');
+            margin-top: 25px;
+            font-size: 20px;
+       }
+
+       .beta{
+        max-width: 60px;
+        width: 100%;
+        color: #71717A;
+        padding: 3px 8px;
+        background-color: #E4E4E7;
+        text-align: center;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+    }
+
+   
+
+    &__card:nth-child(2){
+        @include boxStyle(120px, 0)
+    }
+
+
+
+}

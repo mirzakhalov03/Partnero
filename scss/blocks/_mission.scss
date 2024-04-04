@@ -1,0 +1,88 @@
+.mission{
+    margin-top: 170px;
+    padding-top: 100px;
+
+    &__wrapper{
+        @extend %display;
+
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__title{
+        max-width: 50%;
+        width: 100%;
+        padding: 200px 30px;
+        
+        p{
+            font-size: 48px;
+            line-height: 49px;
+            letter-spacing: 2.5px;
+            max-width: 476px;
+            padding-bottom: 50px;
+        }
+
+        button{
+            @include btnStyle(3px, 37px, 'glow');
+
+            background-color: #fff;
+            color: black;
+            font-size: 20px;
+        }
+
+        transition: .3s;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: translateX(-6%);
+            color: white;
+            box-shadow: -60px 1px 5px 0 rgba(75, 75, 75, );
+        }
+
+        
+    }
+
+
+    &__content{
+        max-width: 45%;
+        width: 100%;
+
+    }
+
+    &__card{
+        max-width: 100%;
+        border-bottom: 1px solid #E4E4E7;
+        padding: 45px 10px;
+        
+        @extend %display;
+
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 222px;
+            color: #021412;
+        }
+
+        span{
+            display: block;
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 2px;
+            color: #021412; 
+            max-width: 250px;           
+        }
+        transition: .3s;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+            
+            transform: translateX(-6%);
+            box-shadow: 40px 1px 5px 0 rgba(75, 75, 75, )
+        }
+
+        &:hover p{
+            color: white;
+        }
+        &:hover span{
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Partnero | Animated</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/common.min.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <div class="nav__logo">
+                    <a href="index.html"><img src="./img/nav_logo.svg" alt=""></a>
+                </div>
+                <div class="nav__links-btns">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#affiliate">Affiliate</a></li>
+                        <li><a href="#referral">Referral</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <button onclick="redirect()" class="regular_btn">Log in</button>
+                        <button onclick="redirect()" class="regular_btn">Sign up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__content">
+                    <h1>
+                        Partnership programs tailor-made for your business
+                    </h1>
+                    <p>Tap into new revenue channels by running fully customized affiliate and referral programs.</p>
+                    <br>
+                    <button onclick="redirect()" class="regular_btn">Sign up now</button>
+                    <div class="shaped__divs">
+                        <div class="gray-one"></div>
+                        <div class="gray-trick"></div>
+                        <div class="pink-one"></div>
+                        <div class="green-one"></div>
+                    </div>
+                </div>
+                <div class="loader"></div>
+                <div class="hero__imgs"></div>
+            </div>
+            <div style="display: flex; justify-content: end;"><div class="yellow-shape"></div></div>
+        </div>
+    </header>
+    <!-- ABOUT -->
+    <section id="affiliate" class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__card">
+                    <div>
+                        <span>Affiliate programs</span>
+                        <br>
+                        <p>Take control of every aspect of your affiliate programs including program terms, branded partner portal and email communications.</p>
+                        <br>
+                        <button onclick="redirect()" class="regular_btn">Find out more</button>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div>
+                        <div class="beta">BETA</div>
+                        <span>Referral programs</span>
+                        <br>
+                        <p>Turn every customer into a partner with fully customizable reward setup and create and manage coupon codes.</p>
+                        <br>
+                        <button onclick="redirect()" class="regular_btn">Find out more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEEDBACK -->
+    <div id="referral" class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="feedback__img">
+                    <img src="./img/girl.png" alt="">
+                </div>
+                <div class="feedback__content">
+                    <img src="./img/quote.svg" alt="">
+                    <blockquote>Our goal was to streamline partnership management. With thousands of active affiliates, we were looking for a simplified workflow and more features for our partners. <a href="">Read More</a></blockquote>
+                    <br>
+                    <br>
+                    <cite>Rachel</cite>
+                    <br>
+                    <small>Partnerships manager at MailerLite</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MISSION -->
+    <div id="features" class="mission">
+        <div class="container">
+            <div class="mission__wrapper">
+                <div class="mission__title">
+                    <p>Mission control for your partnerships</p>
+                    <button onclick="redirect()" class="regular_btn">Explore more features</button>
+                </div>
+                <div class="mission__content">
+                    <div class="mission__card">
+                        <span>Multiple programs, one account</span>
+                        <p>Build as many unique programs as you need—all easily accessible and fully customizable from a single dashboard.</p>
+                    </div>
+                    <div class="mission__card">
+                        <span>Seamless partner experience</span>
+                        <p>Partner portal that reminds partners they’re working with you. Use your colors, fonts, logo, and the layout style that best suits your brand - not ours.</p>
+                    </div>
+                    <div class="mission__card">
+                        <span>Reporting and insights</span>
+                        <p>See how well your partners are doing with program’s key performance indicators as well as data aggregated across all your programs.</p>
+                    </div>
+                    <div class="mission__card" style="border: none;">
+                        <span>Collaboration</span>
+                        <p>Get your team onboard to help create and manage your partner programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRICING -->
+    <div id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing__header">
+                <h2>Pricing</h2>
+                <p>We believe pricing should be straightforward, fair and grow with your business. No limits on transactions, number of partners, or revenue.</p>
+            </div>
+            <div class="pricing__wrapper">
+                <div class="pricing__card">
+                    <span>Starter</span>
+                    <p>$99<small>/mo</small></p>
+                    <button onclick="redirect()" class="regular_btn">Start trial</button>
+                    <br>
+                    <br>
+                    <div class="feature">
+                        <img src="./img/boxing.svg" alt="">1 Program
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/person.svg" alt="">1 Team member
+                    </div>
+                    <br>
+                    <small style="color: gray;">Key features</small>
+                    <div class="feature">
+                        <img src="./img/tick.svg" alt="">Unlimited partners and transactions
+                    </div>
+                    <div class="feature">
+                        <img src="./img/tick.svg" alt="">White-labeled partner portal
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/tick.svg" alt="">Dashboard and data reports
+                    </div>
+                </div>
+                <div class="pricing__card">
+                    <span>Partner</span>
+                    <p>$399<small>/mo</small></p>
+                    <button onclick="redirect()" class="regular_btn">Start trial</button>
+                    <br>
+                    <br>
+                    <div class="feature">
+                        <img src="./img/boxing.svg" alt="">4 Programs
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/person.svg" alt="">4 Team members
+                    </div>
+                    <br>
+                    <small style="color: gray;">All in Starter, plus</small>
+                    <div class="feature">
+                        <img src="./img/tick.svg" alt="">Automated payouts*
+                    </div>
+                    <div class="feature">
+                        <img src="./img/tick.svg" alt="">Individual partner commission
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/tick.svg" alt="">Integration assistance
+                    </div>
+                </div>
+                <div class="pricing__card">
+                    <span>Advanced</span>
+                    <p>$599<small>/mo</small></p>
+                    <button onclick="redirect()" class="regular_btn">Start trial</button>
+                    <br>
+                    <br>
+                    <div class="feature">
+                        <img src="./img/boxing.svg" alt="">10 Programs
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/person.svg" alt="">10 Team members
+                    </div>
+                    <br>
+                    <small style="color: gray;">All in Partner, plus</small>
+                    <div class="feature">
+                        <img src="./img/tick.svg" alt="">Custom code injection
+                    </div>
+                    <div class="feature" style="border: none;">
+                        <img src="./img/tick.svg" alt="">Unlimited tracking domains
+                    </div>
+                </div>
+            </div>
+            <div class="pricing__footer">
+                <p><a href="./pages/external.html">Full pricing plan comparison</a></p><a href=""><img src="./img/arrow.svg" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <h2>Start your free 60-day trial today</h2>
+                <br>
+                <br>
+                <button onclick="redirect()" class="regular_btn">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="tab-big">
+                    <img src="./img/nav_logo.svg" alt="">
+                    <p>Partnership programs tailor-made for your business</p>
+                    <div style="display: flex; gap: 10px;">
+                        <form class="footer__form">
+                            <input type="email">
+                        </form>
+                        <button>Subscribe</button>
+                    </div>
+                    <small>Subscribe for product updates. For more details, review our Privacy Policy.</small>
+                    <br>
+                    <br>
+                    <div class="socials">
+                        <ul class="example-2">
+                            <li class="icon-content">
+                              <a
+                                href="https://linkedin.com/"
+                                aria-label="LinkedIn"
+                                data-social="linkedin"
+                              >
+                                <div class="filled"></div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-linkedin"
+                                  viewBox="0 0 16 16"
+                                  xml:space="preserve"
+                                >
+                                  <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                    fill="currentColor"
+                                  ></path>
+                                </svg>
+                              </a>
+                              <div class="tooltip">LinkedIn</div>
+                            </li>
+                            <li class="icon-content">
+                              <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                                <div class="filled"></div>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-github"
+                                  viewBox="0 0 16 16"
+                                  xml:space="preserve"
+                                >
+                                  <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                    fill="currentColor"
+                                  ></path>
+                                </svg>
+                              </a>
+                              <div class="tooltip">GitHub</div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <span>Product</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href=""><p>Features</p></a>
+                    <br>
+                    <a href=""><p>Affiliate</p></a>
+                    <br>
+                    <a href=""><p>Partner portal</p></a>
+                    <br>
+                    <a href=""><p>Referral</p></a>
+                    <br>
+                    <a href=""><p>Pricing</p></a>
+                </div>
+                <div class="tab">
+                    <span>Company</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href=""><p>About</p></a>
+                    <br>
+                    <a href=""><p>Contact us</p></a>
+                    <br>
+                    <a href=""><p>Become a partner</p></a>
+                    <br>
+                    <a href=""><p>Terms & Policies</p></a>
+                    <br>
+                    <p style="color: transparent;">.</p>
+                </div>
+                <div class="tab">
+                    <span>Resources</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href=""><p>Integrations</p></a>
+                    <br>
+                    <a href=""><p>Knowledge base</p></a>
+                    <br>
+                    <a href=""><p>Developers API</p></a>
+                    <br>
+                    <p style="color: transparent;">.</p>
+                    <br>
+                    <p style="color: transparent;">.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__last">
+                <span>
+                    © 2023 Partnero. All rights reserved.
+                </span>
+                <span>
+                    <img src="./img/TheRemoteCompany.svg" alt="">
+                    <img src="./img/We're part of The Remote Company.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
